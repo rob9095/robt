@@ -47,7 +47,9 @@ a.btn {
 section {
 	display: flex;
 	flex-direction: column;
-	padding: 70px 150px;
+  padding: 35px 150px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 section.center {
@@ -89,6 +91,26 @@ section p {
 	section {
 		padding: 50px 20px;
 	}
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-left {
+  align-items: flex-start;
+}
+
+.flex-align-right {
+  align-items: flex-end;
 }
 
 /*Header Styles*/
@@ -147,10 +169,12 @@ header nav li {
 .hero {
 	position: relative;
 	justify-content: center;
-	min-height: 100vh;
+  min-height: 100vh;
+  max-width: 100%;
 	color: #fff;
 	align-items: flex-start;
 	overflow: hidden;
+	padding: 70px 300px;
 }
 
 .hero .background-image {
@@ -231,25 +255,78 @@ section.about {
 
 /* Sklls Section */
 
-.skills-container {
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.skills {
+	max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
   flex-direction: row;
-	display: flex;
-	max-width: 1100px;
+  align-items: center;
 }
 
-.skills-container .skill-container {
-  width: 300px;
-  height: 375px;
-  background: linear-gradient(45deg, rgba(60,141,254,-.4) 0%, rgba(72,72,254,.3) 100%);
+.skills div {
+  width: 50%;
+}
+
+.skills-list {
+}
+
+.skill {
+  color: #fff;
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+  width: 125px;
+  height: 95px;
   border-radius: 20px;
-  margin: 10px;
+  margin: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill.small {
+  width: 100px;
+  height: 75px;
+  font-size: 21px;
+}
+
+.skill.large {
+  width: 165px;
+  height: 115px;
+  font-size: 39px;
+}
+
+.skill.js {
+  background: linear-gradient(45deg, #e7a229, #fcd258);
+  border-radius: 20px 20px 0 20px;
+}
+
+
+.skill.css {
+  background: linear-gradient(45deg, #0c73b6, #61bbdd);
+  border-radius: 20px 0px 20px 20px;
+}
+
+.skill.html {
+  background: linear-gradient(45deg, #e45229, #ff8b5d);
+  border-radius: 20px 0px 20px 20px;
+}
+
+.skill.node {
+  background: linear-gradient(45deg,  #50af49, #8dcb10);
+  border-radius: 20px 20px 20px 0px;
+}
+
+.skill.react {
+  background: linear-gradient(45deg,  #00a7ff, #50d5fc);
+  border-radius: 0px 20px 20px 20px;
+}
+
+.skill.mongo {
+  background: linear-gradient(45deg,  #559f4a, #9dc18e);
+  border-radius: 0px 20px 20px 20px;
 }
 
 .skills .grid li {
@@ -280,4 +357,55 @@ section.about {
 	.skills .grid li.large {
 		flex-basis: 100%;
 	}
+}
+
+/* Projects */
+
+.project-container {
+  border-radius: 15px;
+  box-shadow: 0 70px 140px 0 rgba(130,136,171,0.2);
+  background: #fff;
+}
+
+.project-container div {
+  width: 50%;
+}
+
+.project-details {
+  padding: 35px;
+}
+
+.project-details h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.75rem;
+  letter-spacing: 1.8px;
+  color: #525963;
+}
+
+.project-details p {
+  margin-top: 28px;
+  font-size: .688rem;
+  line-height: 18px;
+  letter-spacing: 1.38px;
+  color: #8c93bd;
+}
+
+.project-details .btn {
+  padding: 16px 32px;
+  font-size: .688rem;
+  line-height: 18px;
+  letter-spacing: 1.54px;
+}
+
+.project-image {
+  justify-content: center;
+  background: linear-gradient(150deg, #6614f5, #b791fe);
+}
+
+.project-image img {
+
+}
+
+.btn.maps-app {
+  background: linear-gradient(150deg, #6614f5, #b791fe);
 }
