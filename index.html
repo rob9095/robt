@@ -11,103 +11,114 @@
 </head>
 <body>
   <header>
-    <h2><a href="#">robt</a></h2>
-    <nav>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-	  <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-    </nav>
+    <div class="container">
+        <h2><a href="#">Rob</a></h2>
+        <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </nav>      
+    </div>
   </header>
 
   <section class="hero">
-    <div class="background-image" style="background-image: url(assets/img/hero-img-sat-1.png);"></div>
-    <div class="hero-content-area">
-      <h1>Hi, I'm <span class="accent">Rob</span></h1>
-      <p>Full-stack web developer and lover of open source</p>
-      <a href="#" class="btn">Contact Me</a>
+    <div class="container">
+        <div class="hero-image"></div>
+        <div class="hero-content-area">
+          <h1>Hi, I'm <span class="accent">Rob</span></h1>
+          <p>Full-stack web developer and lover of open source</p>
+          <a href="#" class="btn main-gradient">Contact Me</a>
+        </div>      
     </div>
   </section>
   
   <section class="about">
-    <h3 class="title">About</h3>
-	<hr>
-    <p>
-      I'm a passionate web developer and eCommerce systems analyst currently based in Dana Point, CA. My specialties are JavaScript (ES6), Node.js, Express, ReactJS, Redux, MongoDB, MySQL, HTML5, and CSS3. I really enjoy learning more about technology and using my knowledge to solve problems. I'm also a Grow with Google Scholar and a certified graduate of the Udacity Front End Web Developer Nanodegree program.
-    </p>
-    <p>
-      As a Business Systems Analyst, I’ve gained a lot of practical experience coding, testing, and releasing small in-house systems that increase productivity and efficiency. I love to automate business processes and build software that solves real problems in the most elegant way. Aside from work, I also enjoy traveling, the ocean, and spending time hiking and skiing in the mountains.
-    </p>
-    <p>
-      Please contact me if you'd like to work together on a project or just to chat.
-    </p>
-
-    <!-- 
-    <ul class="grid">
-      <li class="small" style="background-image: url(assets/img/mountain1.jpg);"></li>
-      <li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
-      <li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
-      <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
-    </ul> -->
+      <div class="container">
+          <h3 class="title">About</h3>
+          <hr>
+            <p>
+              I'm a passionate web developer and eCommerce systems analyst currently based in Dana Point, CA. My specialties are JavaScript (ES6), Node.js, Express, ReactJS, Redux, MongoDB, MySQL, HTML5, and CSS3. I really enjoy learning more about technology and using my knowledge to solve problems. I'm also a Grow with Google Scholar and a certified graduate of the Udacity Front End Web Developer Nanodegree program.
+            </p>
+            <p>
+              As a Business Systems Analyst, I’ve gained a lot of practical experience coding, testing, and releasing small in-house systems that increase productivity and efficiency. I love to automate business processes and build software that solves real problems in the most elegant way. Aside from work, I also enjoy traveling, the ocean, and spending time hiking and skiing in the mountains.
+            </p>
+            <p>
+              Please contact me if you'd like to work together on a project or just to chat.
+            </p>
+        
+            <!-- 
+            <ul class="grid">
+              <li class="small" style="background-image: url(assets/img/mountain1.jpg);"></li>
+              <li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
+              <li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
+              <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
+            </ul> -->
+      </div>
   </section>
 
   <section class="skills">
-    <div>
-        <h3 class="title">Skills</h3>
-        <hr>
-        <p>
-          I've worked with many different web technologies and I regularly use these favorites
-        </p> 
-    </div>
-    <div class="skills-list flex flex-align-center">
-        <div class="flex flex-col flex-align-right">
-          <div class="skill js">JS</div>
-          <div class="skill css small">CSS3</div>    
-          <div class="skill html">HTML5</div>
+    <div class="container">
+        <div>
+            <h3 class="title">Skills</h3>
+            <hr>
+            <p>
+              I've worked with many different web technologies and I regularly use these favorites
+            </p> 
         </div>
-        <div class="flex flex-col flex-align-left">
-          <div class="skill node small">Node</div>
-          <div class="skill react">React</div>    
-          <div class="skill mongo large">Mongo</div>
+        <div class="skills-list flex flex-align-center">
+            <div class="flex flex-col flex-align-right">
+              <div class="skill js">JS</div>
+              <div class="skill css small">CSS3</div>    
+              <div class="skill html">HTML5</div>
+            </div>
+            <div class="flex flex-col flex-align-left">
+              <div class="skill node small">Node</div>
+              <div class="skill react">React</div>    
+              <div class="skill mongo large">Mongo</div>
+            </div>
         </div>
     </div>
   </section>
 
   <section class="projects">
-    <h3 class="title">Projects</h3>
-    <hr>
-    <div class="project-container flex flex-align-center">
-      <div class="project-image maps-project-gradient flex flex-align-center">
-        <img src="./assets/img/maps-icon.png" />
+      <div class="container">
+        
+      <h3 class="title">Projects</h3>
+      <hr>
+      <div class="project-container flex flex-align-center">
+        <div class="project-image maps-project-gradient flex flex-align-center">
+          <img src="./assets/img/maps-icon.png" />
+        </div>
+        <div class="project-details flex flex-col flex-align-left">
+          <h2>Google Maps App</h2>
+          <p>JavaScript, React, Babel, Webpack, Fetch API, CSS3, HTML5</p>
+          <a class="btn maps-project-gradient">View Project</a>
+        </div>
       </div>
-      <div class="project-details flex flex-col flex-align-left">
-        <h2>Google Maps App</h2>
-        <p>JavaScript, React, Babel, Webpack, Fetch API, CSS3, HTML5</p>
-        <a class="btn maps-project-gradient">View Project</a>
-      </div>
-    </div>
 
-    <div class="project-container flex flex-align-center flex-row-reverse">
-      <div class="project-image frogger-project-gradient flex flex-align-center">
-        <img src="./assets/img/frogger-icon.png" />
+      <div class="project-container flex flex-align-center flex-row-reverse">
+        <div class="project-image frogger-project-gradient flex flex-align-center">
+          <img src="./assets/img/frogger-icon.png" />
+        </div>
+        <div class="project-details flex flex-col flex-align-left">
+          <h2>Frogger Clone</h2>
+          <p>JavaScript, HTML5 Canvas, CSS3</p>
+          <a class="btn frogger-project-gradient">View Project</a>
+        </div>
       </div>
-      <div class="project-details flex flex-col flex-align-left">
-        <h2>Frogger Clone</h2>
-        <p>JavaScript, HTML5 Canvas, CSS3</p>
-        <a class="btn frogger-project-gradient">View Project</a>
+  
+      <div class="project-container flex flex-align-center">
+        <div class="project-image memory-project-gradient flex flex-align-center">
+          <img src="./assets/img/memory-icon.png" />
+        </div>
+        <div class="project-details flex flex-col flex-align-left">
+          <h2>Memory Card Game</h2>
+          <p>JavaScript, HTML5, CSS Animations</p>
+          <a class="btn memory-project-gradient">View Project</a>
+        </div>
       </div>
     </div>
- 
-    <div class="project-container flex flex-align-center">
-      <div class="project-image memory-project-gradient flex flex-align-center">
-        <img src="./assets/img/memory-icon.png" />
-      </div>
-      <div class="project-details flex flex-col flex-align-left">
-        <h2>Memory Card Game</h2>
-        <p>JavaScript, HTML5, CSS Animations</p>
-        <a class="btn memory-project-gradient">View Project</a>
-      </div>
-    </div>    
   </section>
   <footer>
     
